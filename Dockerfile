@@ -9,7 +9,7 @@ RUN addgroup --gid 1234 minecraft
 RUN adduser --disabled-password --home=/data --uid 1234 --gid 1234 --gecos "minecraft user" minecraft
 
 RUN mkdir /tmp/feed-the-beast && cd /tmp/feed-the-beast && \
-	wget -c  https://github.com/jaysonsantos/docker-minecraft-ftb-direwolf20-1.10.git -O FTBInfinityServer.zip && \
+	wget -c  https://www.feed-the-beast.com/projects/ftb-presents-direwolf20-1-12/files/2637279/download -O FTBInfinityServer.zip && \
 	unzip FTBInfinityServer.zip && \
 	rm FTBInfinityServer.zip && \
 	bash -x FTBInstall.sh && \
